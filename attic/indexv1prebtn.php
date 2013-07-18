@@ -12,7 +12,7 @@
 		<link href="jq/jquery.mobile-1.3.1.min.css" rel="stylesheet" type="text/css"/><!---include css-->
 		<script type="text/javascript" src="jq/jquery-1.10.1.min.js"></script><!--include jquery-->
 		<script type="text/javascript" src="jq/jquery.mobile-1.3.1.min.js"></script><!--include jquery mobile-->
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script><!--include phonegap js-->
+		<script type="text/javascript" src="cordova.js"></script><!--include phonegap js-->
 		
 		<!--cdn for post development so that local libraries load faster if cached on servers and latest version
 			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
@@ -65,11 +65,6 @@
 						.css( 'top', Math.round( (270 -$(this).outerHeight() ) / 2) + 'px' );
 				} );
 			} );
-			
-			//function init () {
-				//document.addEventlistener 
-				//("deviceready", deviceready, true);
-			//} 
 		</script>
 		
 	</head>
@@ -132,7 +127,7 @@
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#page2">RSVP</a></li>
             <li><a href="#page3">GuestBook</a></li>
-			<li><a href="#page4" id="btnCamera">Take Photo</a></li>
+			<li><a href="#page4">Take Photo</a></li>
          	<li><a href="#page5">Quiz</a></li>
 		</ul>		
 	</div>
@@ -183,8 +178,7 @@
 	 		<div data-role="navbar">
 	 			<ul>
 	 				<li><a href="#">Write Comment</a></li>
-					<li><a href="#" id="btnGallery">Add Photo</a></li>
-					<li><a href="#" id="btnCamera">Take Photo</a></li>
+					<li><a href="#">Add Photo/Take Photo</a></li>
 	 	 		</ul><!--end of unordered list for nav bar-->
 	 		</div><!--end of navbar for footer-->
 		</div><!--end of data-role footer-->
